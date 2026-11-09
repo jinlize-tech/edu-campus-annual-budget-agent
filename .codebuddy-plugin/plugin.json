@@ -1,0 +1,63 @@
+{
+  "name": "edu-campus-annual-budget-agent",
+  "version": "1.0.0",
+  "description": "A multi-step education agent for Campus Annual Budget Agent.",
+  "author": {
+    "name": "广州金励泽科技服务有限公司",
+    "email": "270911570+yangsongbaofu-dot@users.noreply.github.com"
+  },
+  "agents": [
+    "./agents/edu-campus-annual-budget-agent.md"
+  ],
+  "expertType": "agent",
+  "agentName": "edu-campus-annual-budget-agent",
+  "displayName": {
+    "en": "Campus Annual Budget Agent",
+    "zh": "校区年度预算编制"
+  },
+  "profession": {
+    "en": "Campus Annual Budget Agent",
+    "zh": "校区年度预算编制"
+  },
+  "displayDescription": {
+    "en": "Multi-step professional workflow for Campus Annual Budget Agent.",
+    "zh": "从招生、课程、师资、校区产能和费用计划出发，组织多部门预算并生成版本化假设、汇总和审批。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "en": "Help me complete Campus Annual Budget Agent.",
+    "zh": "请帮我完成一次校区年度预算编制"
+  },
+  "plugin": "edu-campus-annual-budget-agent",
+  "tags": [
+    {
+      "en": "Education",
+      "zh": "教培机构"
+    },
+    {
+      "en": "Professional Workflow",
+      "zh": "专业工作流"
+    },
+    {
+      "en": "Campus Annual Budget Agent",
+      "zh": "校区年度预算编制"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Help me complete Campus Annual Budget Agent.",
+      "zh": "请帮我完成一次校区年度预算编制"
+    },
+    {
+      "en": "Start with scope and evidence inventory.",
+      "zh": "请先确认范围并盘点资料"
+    },
+    {
+      "en": "Generate the final deliverables with risks and open questions.",
+      "zh": "请生成最终成果，并列出风险与待确认事项"
+    }
+  ],
+  "homepage": "https://github.com/jinlize-tech/edu-campus-annual-budget-agent",
+  "license": "Apache-2.0"
+}

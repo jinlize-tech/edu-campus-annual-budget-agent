@@ -1,0 +1,471 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.jinlize.tech/education/JLZ-EDU-AG-026/input.schema.json",
+  "title": "校区年度预算编制输入契约",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "data_status",
+    "contains_sensitive_data",
+    "annual_targets",
+    "enrollment_plan",
+    "course_plan",
+    "pricing",
+    "staffing_plan",
+    "compensation_rules",
+    "fixed_costs",
+    "budget_months"
+  ],
+  "properties": {
+    "contract_version": {
+      "const": "1.2.0"
+    },
+    "data_status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "partially_confirmed",
+        "unconfirmed"
+      ],
+      "description": "输入资料的确认状态"
+    },
+    "contains_sensitive_data": {
+      "type": "boolean"
+    },
+    "requested_output_language": {
+      "type": "string",
+      "enum": [
+        "zh-CN",
+        "en"
+      ],
+      "default": "zh-CN"
+    },
+    "annual_targets": {
+      "title": "年度经营目标",
+      "description": "招生、收入和成本约束",
+      "type": "string",
+      "minLength": 1
+    },
+    "enrollment_plan": {
+      "title": "招生节奏",
+      "description": "月度或季度目标",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "course_plan": {
+      "title": "课程计划",
+      "description": "课程、班型、价格和课时",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "pricing": {
+      "title": "价格与优惠",
+      "description": "课程价格和折扣口径",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "staffing_plan": {
+      "title": "人员与教师计划",
+      "description": "编制、招聘和薪酬规则",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "compensation_rules": {
+      "title": "薪酬规则",
+      "description": "固定、课时和提成口径",
+      "type": "string",
+      "minLength": 1
+    },
+    "fixed_costs": {
+      "title": "固定费用",
+      "description": "房租、行政、软件等",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "capital_expenditure": {
+      "title": "资本支出",
+      "description": "设备、装修和一次性投入",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "historical_actuals": {
+      "title": "历史实际",
+      "description": "用于校验假设",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "budget_months": {
+      "title": "预算期间",
+      "description": "默认12",
+      "type": "integer",
+      "minimum": 0
+    },
+    "resume_mode": {
+      "type": "string",
+      "enum": [
+        "new",
+        "resume",
+        "target_change",
+        "stage_rollback"
+      ],
+      "default": "new"
+    },
+    "agent_state": {
+      "type": "object",
+      "required": [
+        "state_version",
+        "product_id",
+        "current_stage",
+        "stage_status",
+        "completed_stages",
+        "confirmed_facts",
+        "open_questions",
+        "human_confirmation",
+        "recovery_context",
+        "change_log",
+        "minimal_context"
+      ],
+      "properties": {
+        "state_version": {
+          "const": "1.2.0"
+        },
+        "product_id": {
+          "const": "JLZ-EDU-AG-026"
+        },
+        "current_stage": {
+          "type": "string",
+          "enum": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY",
+            "S3_PROFESSIONAL_DIAGNOSIS",
+            "S4_SOLUTION_DESIGN",
+            "S5_HUMAN_CONFIRMATION",
+            "S6_FINAL_DELIVERY",
+            "PAUSED",
+            "FAILED"
+          ]
+        },
+        "stage_status": {
+          "type": "string",
+          "enum": [
+            "in_progress",
+            "paused",
+            "completed",
+            "failed"
+          ]
+        },
+        "completed_stages": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "S1_SCOPE_CONFIRMATION",
+              "S2_EVIDENCE_INVENTORY",
+              "S3_PROFESSIONAL_DIAGNOSIS",
+              "S4_SOLUTION_DESIGN",
+              "S5_HUMAN_CONFIRMATION",
+              "S6_FINAL_DELIVERY"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "confirmed_facts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "fact_id",
+              "statement",
+              "source_refs",
+              "confirmed_by"
+            ],
+            "properties": {
+              "fact_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "statement": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "confirmed_by": {
+                "type": "string",
+                "minLength": 1
+              },
+              "confirmed_at": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "open_questions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "question_id",
+              "question",
+              "blocking",
+              "owner"
+            ],
+            "properties": {
+              "question_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "question": {
+                "type": "string",
+                "minLength": 1
+              },
+              "blocking": {
+                "type": "boolean"
+              },
+              "owner": {
+                "type": "string"
+              },
+              "needed_for": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "human_confirmation": {
+          "type": "object",
+          "required": [
+            "required",
+            "status"
+          ],
+          "properties": {
+            "required": {
+              "type": "boolean"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "not_required",
+                "pending",
+                "confirmed",
+                "rejected"
+              ]
+            },
+            "review_scope": {
+              "type": "string"
+            },
+            "confirmed_by": {
+              "type": "string"
+            },
+            "confirmed_at": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "recovery_context": {
+          "type": "object",
+          "required": [
+            "last_stable_stage",
+            "resume_instruction",
+            "affected_stages",
+            "can_resume"
+          ],
+          "properties": {
+            "last_stable_stage": {
+              "type": "string",
+              "enum": [
+                "S1_SCOPE_CONFIRMATION",
+                "S2_EVIDENCE_INVENTORY",
+                "S3_PROFESSIONAL_DIAGNOSIS",
+                "S4_SOLUTION_DESIGN",
+                "S5_HUMAN_CONFIRMATION",
+                "S6_FINAL_DELIVERY",
+                "PAUSED",
+                "FAILED"
+              ]
+            },
+            "resume_instruction": {
+              "type": "string",
+              "minLength": 1
+            },
+            "affected_stages": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "S1_SCOPE_CONFIRMATION",
+                  "S2_EVIDENCE_INVENTORY",
+                  "S3_PROFESSIONAL_DIAGNOSIS",
+                  "S4_SOLUTION_DESIGN",
+                  "S5_HUMAN_CONFIRMATION",
+                  "S6_FINAL_DELIVERY",
+                  "PAUSED",
+                  "FAILED"
+                ]
+              },
+              "uniqueItems": true
+            },
+            "can_resume": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        },
+        "change_log": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "event_type",
+              "reason",
+              "affected_stages",
+              "occurred_at"
+            ],
+            "properties": {
+              "event_type": {
+                "type": "string",
+                "enum": [
+                  "resume",
+                  "target_change",
+                  "stage_rollback",
+                  "interruption"
+                ]
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              },
+              "from_stage": {
+                "type": "string",
+                "enum": [
+                  "S1_SCOPE_CONFIRMATION",
+                  "S2_EVIDENCE_INVENTORY",
+                  "S3_PROFESSIONAL_DIAGNOSIS",
+                  "S4_SOLUTION_DESIGN",
+                  "S5_HUMAN_CONFIRMATION",
+                  "S6_FINAL_DELIVERY",
+                  "PAUSED",
+                  "FAILED"
+                ]
+              },
+              "to_stage": {
+                "type": "string",
+                "enum": [
+                  "S1_SCOPE_CONFIRMATION",
+                  "S2_EVIDENCE_INVENTORY",
+                  "S3_PROFESSIONAL_DIAGNOSIS",
+                  "S4_SOLUTION_DESIGN",
+                  "S5_HUMAN_CONFIRMATION",
+                  "S6_FINAL_DELIVERY",
+                  "PAUSED",
+                  "FAILED"
+                ]
+              },
+              "affected_stages": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "S1_SCOPE_CONFIRMATION",
+                    "S2_EVIDENCE_INVENTORY",
+                    "S3_PROFESSIONAL_DIAGNOSIS",
+                    "S4_SOLUTION_DESIGN",
+                    "S5_HUMAN_CONFIRMATION",
+                    "S6_FINAL_DELIVERY",
+                    "PAUSED",
+                    "FAILED"
+                  ]
+                },
+                "uniqueItems": true
+              },
+              "occurred_at": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "minimal_context": {
+          "type": "object",
+          "required": [
+            "user_goal",
+            "scope"
+          ],
+          "properties": {
+            "user_goal": {
+              "type": "string",
+              "minLength": 1
+            },
+            "scope": {
+              "type": "string",
+              "minLength": 1
+            },
+            "constraints": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "last_user_instruction": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "resume_mode"
+        ],
+        "properties": {
+          "resume_mode": {
+            "enum": [
+              "resume",
+              "target_change",
+              "stage_rollback"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "agent_state"
+        ]
+      }
+    }
+  ]
+}

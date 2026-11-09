@@ -1,0 +1,84 @@
+[
+  {
+    "case_id": "standard_vector",
+    "input": {
+      "annual_enrollment": 500,
+      "average_price": 6000,
+      "discount_rate": 0.08,
+      "refund_rate": 0.05,
+      "teacher_cost_per_student": 1200,
+      "fixed_staff_cost": 600000,
+      "marketing_cost": 120000,
+      "rent_cost": 300000,
+      "other_fixed_cost": 100000
+    },
+    "expected": {
+      "net_revenue": 2622000,
+      "teacher_cost": 600000,
+      "total_cost": 1720000,
+      "annual_result": 902000,
+      "annual_margin_rate": 0.34401220442410374
+    }
+  },
+  {
+    "case_id": "zero_enrollment",
+    "input": {
+      "annual_enrollment": 0,
+      "average_price": 6000,
+      "discount_rate": 0.08,
+      "refund_rate": 0.05,
+      "teacher_cost_per_student": 1200,
+      "fixed_staff_cost": 600000,
+      "marketing_cost": 120000,
+      "rent_cost": 300000,
+      "other_fixed_cost": 100000
+    },
+    "expected_error": "CALCULATION_FAILED"
+  },
+  {
+    "case_id": "invalid_discount",
+    "input": {
+      "annual_enrollment": 500,
+      "average_price": 6000,
+      "discount_rate": -0.1,
+      "refund_rate": 0.05,
+      "teacher_cost_per_student": 1200,
+      "fixed_staff_cost": 600000,
+      "marketing_cost": 120000,
+      "rent_cost": 300000,
+      "other_fixed_cost": 100000
+    },
+    "expected_error": "INPUT_INVALID"
+  },
+  {
+    "case_id": "missing_cost",
+    "input": {
+      "annual_enrollment": 500,
+      "average_price": 6000,
+      "discount_rate": 0.08,
+      "refund_rate": 0.05,
+      "teacher_cost_per_student": 1200,
+      "fixed_staff_cost": 600000,
+      "marketing_cost": 120000,
+      "other_fixed_cost": 100000
+    },
+    "expected_error": "INPUT_INVALID"
+  },
+  {
+    "case_id": "negative_result",
+    "input": {
+      "annual_enrollment": 500,
+      "average_price": 6000,
+      "discount_rate": 0.08,
+      "refund_rate": 0.05,
+      "teacher_cost_per_student": 1200,
+      "fixed_staff_cost": 3000000,
+      "marketing_cost": 120000,
+      "rent_cost": 300000,
+      "other_fixed_cost": 100000
+    },
+    "expected": {
+      "annual_result": -1498000
+    }
+  }
+]

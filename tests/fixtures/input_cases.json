@@ -1,0 +1,284 @@
+{
+  "cases": [
+    {
+      "case_id": "normal_complete",
+      "expected_status": "READY_FOR_PROCESSING",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "annual_targets": "年度经营目标已核对（脱敏示例）",
+        "enrollment_plan": [
+          {}
+        ],
+        "course_plan": [
+          {}
+        ],
+        "pricing": [
+          {}
+        ],
+        "staffing_plan": [
+          {}
+        ],
+        "compensation_rules": "薪酬规则已核对（脱敏示例）",
+        "fixed_costs": [
+          {}
+        ],
+        "capital_expenditure": [
+          {}
+        ],
+        "historical_actuals": [
+          {}
+        ],
+        "budget_months": 12,
+        "resume_mode": "new"
+      }
+    },
+    {
+      "case_id": "missing_required",
+      "expected_status": "NEEDS_INPUT",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "enrollment_plan": [
+          {}
+        ],
+        "course_plan": [
+          {}
+        ],
+        "pricing": [
+          {}
+        ],
+        "staffing_plan": [
+          {}
+        ],
+        "compensation_rules": "薪酬规则已核对（脱敏示例）",
+        "fixed_costs": [
+          {}
+        ],
+        "capital_expenditure": [
+          {}
+        ],
+        "historical_actuals": [
+          {}
+        ],
+        "budget_months": 12,
+        "resume_mode": "new"
+      }
+    },
+    {
+      "case_id": "invalid_type",
+      "expected_status": "INVALID_INPUT",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "annual_targets": 123,
+        "enrollment_plan": [
+          {}
+        ],
+        "course_plan": [
+          {}
+        ],
+        "pricing": [
+          {}
+        ],
+        "staffing_plan": [
+          {}
+        ],
+        "compensation_rules": "薪酬规则已核对（脱敏示例）",
+        "fixed_costs": [
+          {}
+        ],
+        "capital_expenditure": [
+          {}
+        ],
+        "historical_actuals": [
+          {}
+        ],
+        "budget_months": 12,
+        "resume_mode": "new"
+      }
+    },
+    {
+      "case_id": "unconfirmed",
+      "expected_status": "NEEDS_CONFIRMATION",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "unconfirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "annual_targets": "年度经营目标已核对（脱敏示例）",
+        "enrollment_plan": [
+          {}
+        ],
+        "course_plan": [
+          {}
+        ],
+        "pricing": [
+          {}
+        ],
+        "staffing_plan": [
+          {}
+        ],
+        "compensation_rules": "薪酬规则已核对（脱敏示例）",
+        "fixed_costs": [
+          {}
+        ],
+        "capital_expenditure": [
+          {}
+        ],
+        "historical_actuals": [
+          {}
+        ],
+        "budget_months": 12,
+        "resume_mode": "new"
+      }
+    },
+    {
+      "case_id": "partial_confirmation",
+      "expected_status": "NEEDS_CONFIRMATION",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "partially_confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "annual_targets": "年度经营目标已核对（脱敏示例）",
+        "enrollment_plan": [
+          {}
+        ],
+        "course_plan": [
+          {}
+        ],
+        "pricing": [
+          {}
+        ],
+        "staffing_plan": [
+          {}
+        ],
+        "compensation_rules": "薪酬规则已核对（脱敏示例）",
+        "fixed_costs": [
+          {}
+        ],
+        "capital_expenditure": [
+          {}
+        ],
+        "historical_actuals": [
+          {}
+        ],
+        "budget_months": 12,
+        "resume_mode": "new"
+      }
+    },
+    {
+      "case_id": "sensitive_marked",
+      "expected_status": "READY_WITH_PRIVACY_WARNING",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": true,
+        "requested_output_language": "zh-CN",
+        "annual_targets": "年度经营目标已核对（脱敏示例）",
+        "enrollment_plan": [
+          {}
+        ],
+        "course_plan": [
+          {}
+        ],
+        "pricing": [
+          {}
+        ],
+        "staffing_plan": [
+          {}
+        ],
+        "compensation_rules": "薪酬规则已核对（脱敏示例）",
+        "fixed_costs": [
+          {}
+        ],
+        "capital_expenditure": [
+          {}
+        ],
+        "historical_actuals": [
+          {}
+        ],
+        "budget_months": 12,
+        "resume_mode": "new"
+      }
+    },
+    {
+      "case_id": "undeclared_field",
+      "expected_status": "INVALID_INPUT",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "annual_targets": "年度经营目标已核对（脱敏示例）",
+        "enrollment_plan": [
+          {}
+        ],
+        "course_plan": [
+          {}
+        ],
+        "pricing": [
+          {}
+        ],
+        "staffing_plan": [
+          {}
+        ],
+        "compensation_rules": "薪酬规则已核对（脱敏示例）",
+        "fixed_costs": [
+          {}
+        ],
+        "capital_expenditure": [
+          {}
+        ],
+        "historical_actuals": [
+          {}
+        ],
+        "budget_months": 12,
+        "resume_mode": "new",
+        "未声明字段": "不应被接受"
+      }
+    },
+    {
+      "case_id": "resume_without_state",
+      "expected_status": "NEEDS_INPUT",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "annual_targets": "年度经营目标已核对（脱敏示例）",
+        "enrollment_plan": [
+          {}
+        ],
+        "course_plan": [
+          {}
+        ],
+        "pricing": [
+          {}
+        ],
+        "staffing_plan": [
+          {}
+        ],
+        "compensation_rules": "薪酬规则已核对（脱敏示例）",
+        "fixed_costs": [
+          {}
+        ],
+        "capital_expenditure": [
+          {}
+        ],
+        "historical_actuals": [
+          {}
+        ],
+        "budget_months": 12,
+        "resume_mode": "resume"
+      }
+    }
+  ]
+}

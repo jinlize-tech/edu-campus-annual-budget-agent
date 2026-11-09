@@ -1,0 +1,122 @@
+{
+  "contract_version": "1.2.0",
+  "product_id": "JLZ-EDU-AG-026",
+  "product_name": "校区年度预算编制",
+  "product_type": "Agent",
+  "repository_name": "edu-campus-annual-budget-agent",
+  "repository_url": "https://github.com/jinlize-tech/edu-campus-annual-budget-agent",
+  "product_version": "1.0.0",
+  "batch": 1,
+  "business_category": "12 经营决策与财务规划中心",
+  "high_risk": false,
+  "deterministic": true,
+  "agent": true,
+  "core_outputs": [
+    "年度预算",
+    "驱动假设表",
+    "月度分布"
+  ],
+  "optional_outputs": [
+    "部门预算",
+    "基准/保守情景",
+    "审批摘要",
+    "跟踪指标"
+  ],
+  "all_outputs": [
+    "年度预算",
+    "驱动假设表",
+    "月度分布",
+    "部门预算",
+    "基准/保守情景",
+    "审批摘要",
+    "跟踪指标"
+  ],
+  "human_review_required": false,
+  "reviewer_role": "业务负责人",
+  "commercial_boundary": null,
+  "input_required": [
+    "contract_version",
+    "data_status",
+    "contains_sensitive_data",
+    "annual_targets",
+    "enrollment_plan",
+    "course_plan",
+    "pricing",
+    "staffing_plan",
+    "compensation_rules",
+    "fixed_costs",
+    "budget_months"
+  ],
+  "input_properties": {
+    "contract_version": {
+      "type": "string"
+    },
+    "data_status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "partially_confirmed",
+        "unconfirmed"
+      ]
+    },
+    "contains_sensitive_data": {
+      "type": "boolean"
+    },
+    "requested_output_language": {
+      "type": "string",
+      "enum": [
+        "zh-CN",
+        "en"
+      ],
+      "default": "zh-CN"
+    },
+    "annual_targets": {
+      "type": "string"
+    },
+    "enrollment_plan": {
+      "type": "array"
+    },
+    "course_plan": {
+      "type": "array"
+    },
+    "pricing": {
+      "type": "array"
+    },
+    "staffing_plan": {
+      "type": "array"
+    },
+    "compensation_rules": {
+      "type": "string"
+    },
+    "fixed_costs": {
+      "type": "array"
+    },
+    "capital_expenditure": {
+      "type": "array"
+    },
+    "historical_actuals": {
+      "type": "array"
+    },
+    "budget_months": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "resume_mode": {
+      "type": "string",
+      "enum": [
+        "new",
+        "resume",
+        "target_change",
+        "stage_rollback"
+      ],
+      "default": "new"
+    },
+    "agent_state": {
+      "type": "object"
+    }
+  },
+  "expected_scenario_count": 15,
+  "license": "Apache-2.0",
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED"
+}

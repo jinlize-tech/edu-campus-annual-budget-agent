@@ -1,0 +1,31 @@
+{
+  "contract_version": "1.2.0",
+  "data_status": "confirmed",
+  "contains_sensitive_data": false,
+  "requested_output_language": "zh-CN",
+  "annual_targets": "年度经营目标已核对（脱敏示例）",
+  "enrollment_plan": [
+    {}
+  ],
+  "course_plan": [
+    {}
+  ],
+  "pricing": [
+    {}
+  ],
+  "staffing_plan": [
+    {}
+  ],
+  "compensation_rules": "薪酬规则已核对（脱敏示例）",
+  "fixed_costs": [
+    {}
+  ],
+  "capital_expenditure": [
+    {}
+  ],
+  "historical_actuals": [
+    {}
+  ],
+  "budget_months": 12,
+  "resume_mode": "new"
+}
