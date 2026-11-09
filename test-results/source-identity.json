@@ -1,0 +1,16 @@
+{
+  "product_id": "JLZ-EDU-AG-026",
+  "repository_name": "edu-campus-annual-budget-agent",
+  "tested_source_commit": "2ce024f0300b1ab912737ee50b3237624ea65089",
+  "tested_source_tree_sha": "c9c64caa11e1539486d58c024af6af27d468e11f",
+  "product_version": "1.0.0",
+  "package_sha256": "BE7584EA9502E974EE96AA097544BA7F08B50A6EEA30E75D1BCF2FCA3A05E7DC",
+  "runtime_test_status": "LOCAL_TEST_PASS",
+  "runtime_test_count": 67,
+  "schema_validation_status": "SCHEMA_INSTANCE_VALIDATION_PASS",
+  "schema_validation_case_count": 16,
+  "scenario_count": 15,
+  "scenario_execution_status": "MAPPED_NOT_INDIVIDUALLY_EXECUTED",
+  "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED"
+}
