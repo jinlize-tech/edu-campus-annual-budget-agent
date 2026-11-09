@@ -1,0 +1,17 @@
+{
+  "product_id": "JLZ-EDU-AG-026",
+  "repository_name": "edu-campus-annual-budget-agent",
+  "version": "1.0.1",
+  "tested_source_commit": "b080036afc39926c29ea1a968f1d0c7ef6c84b24",
+  "tested_source_tree_sha": "8bfff80a1f476b9d97ef0742d235d44bcb1f24d0",
+  "package_path": "dist/edu-campus-annual-budget-agent-v1.0.1.zip",
+  "package_sha256": "23977C1373BDE02DDBEB3A873C1AD1351721898614B54A3CB8BEADC597044B16",
+  "runtime_test_status": "LOCAL_TEST_PASS",
+  "runtime_test_count": 67,
+  "schema_validation_status": "SCHEMA_INSTANCE_VALIDATION_PASS",
+  "schema_validation_case_count": 16,
+  "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "readme_repair": "PASS",
+  "plugin_author_name": "Education AI Tools Maintainers"
+}

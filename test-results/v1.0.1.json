@@ -1,0 +1,700 @@
+{
+  "product_id": "JLZ-EDU-AG-026",
+  "product_type": "Agent",
+  "version": "1.0.1",
+  "contract_version": "1.2.0",
+  "tested_commit": "b080036afc39926c29ea1a968f1d0c7ef6c84b24",
+  "tested_tree_sha": "8bfff80a1f476b9d97ef0742d235d44bcb1f24d0",
+  "tested_at": "2026-11-09T11:59:44.903759+00:00",
+  "test_count": 67,
+  "failure_count": 0,
+  "checks": [
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:README.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:PRODUCT_SPEC.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:USAGE.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:USER_EXPERIENCE.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:LICENSE",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:THIRD_PARTY_NOTICES.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:VERSION",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:contract/input.schema.json",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:contract/output.schema.json",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:contract/runtime_contract.json",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:templates/OUTPUT_TEMPLATE.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:references/DOMAIN_GUIDE.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:references/PROFESSIONAL_PLAYBOOK.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:references/EXAMPLES.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:scripts/contract-validator.js",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:scripts/validate_input.js",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:scripts/validate_output.js",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:scripts/prepare_result.js",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:dist/edu-campus-annual-budget-agent-v1.0.1.zip",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:.codebuddy-plugin/plugin.json",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:agents/edu-campus-annual-budget-agent.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:skills/edu-campus-annual-budget-agent-core/SKILL.md",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:skills/edu-campus-annual-budget-agent-core/scripts/validate_input.js",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:avatars/expert.png",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T1_FILE_STRUCTURE",
+      "name": "exists:scripts/state_machine.js",
+      "status": "PASS",
+      "detail": "exists"
+    },
+    {
+      "layer": "T2_METADATA_CONTRACT",
+      "name": "version",
+      "status": "PASS",
+      "detail": "1.0.1"
+    },
+    {
+      "layer": "T2_METADATA_CONTRACT",
+      "name": "contract_version",
+      "status": "PASS",
+      "detail": "1.2.0"
+    },
+    {
+      "layer": "T2_METADATA_CONTRACT",
+      "name": "core_outputs",
+      "status": "PASS",
+      "detail": "年度预算、驱动假设表、月度分布"
+    },
+    {
+      "layer": "T3_INPUT_CONTRACT",
+      "name": "input:normal_complete",
+      "status": "PASS",
+      "detail": "READY_FOR_PROCESSING"
+    },
+    {
+      "layer": "T3_INPUT_CONTRACT",
+      "name": "input:missing_required",
+      "status": "PASS",
+      "detail": "NEEDS_INPUT"
+    },
+    {
+      "layer": "T3_INPUT_CONTRACT",
+      "name": "input:invalid_type",
+      "status": "PASS",
+      "detail": "INVALID_INPUT"
+    },
+    {
+      "layer": "T3_INPUT_CONTRACT",
+      "name": "input:unconfirmed",
+      "status": "PASS",
+      "detail": "NEEDS_CONFIRMATION"
+    },
+    {
+      "layer": "T3_INPUT_CONTRACT",
+      "name": "input:partial_confirmation",
+      "status": "PASS",
+      "detail": "NEEDS_CONFIRMATION"
+    },
+    {
+      "layer": "T3_INPUT_CONTRACT",
+      "name": "input:sensitive_marked",
+      "status": "PASS",
+      "detail": "READY_WITH_PRIVACY_WARNING"
+    },
+    {
+      "layer": "T3_INPUT_CONTRACT",
+      "name": "input:undeclared_field",
+      "status": "PASS",
+      "detail": "INVALID_INPUT"
+    },
+    {
+      "layer": "T3_INPUT_CONTRACT",
+      "name": "input:resume_without_state",
+      "status": "PASS",
+      "detail": "NEEDS_INPUT"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:completed_valid",
+      "status": "PASS",
+      "detail": "accepted"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:completed_optional_empty_valid",
+      "status": "PASS",
+      "detail": "accepted"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:completed_all_deliverables_empty_invalid",
+      "status": "PASS",
+      "detail": "rejected:3"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:completed_core_missing_invalid",
+      "status": "PASS",
+      "detail": "rejected:1"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:completed_core_empty_invalid",
+      "status": "PASS",
+      "detail": "rejected:1"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:completed_core_whitespace_invalid",
+      "status": "PASS",
+      "detail": "rejected:1"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:completed_placeholder_invalid",
+      "status": "PASS",
+      "detail": "rejected:1"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:completed_with_limits_valid",
+      "status": "PASS",
+      "detail": "accepted"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:completed_with_limits_missing_scope_invalid",
+      "status": "PASS",
+      "detail": "rejected:3"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:needs_input_valid",
+      "status": "PASS",
+      "detail": "accepted"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:needs_input_without_reason_or_next_action_invalid",
+      "status": "PASS",
+      "detail": "rejected:2"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:needs_confirmation_valid",
+      "status": "PASS",
+      "detail": "accepted"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:needs_confirmation_without_human_review_invalid",
+      "status": "PASS",
+      "detail": "rejected:1"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:failed_valid",
+      "status": "PASS",
+      "detail": "accepted"
+    },
+    {
+      "layer": "T4_OUTPUT_CONTRACT",
+      "name": "output:failed_without_reason_or_next_action_invalid",
+      "status": "PASS",
+      "detail": "rejected:2"
+    },
+    {
+      "layer": "T5_AGENT_STATE",
+      "name": "state:new_run_without_state",
+      "status": "PASS",
+      "detail": "no-state"
+    },
+    {
+      "layer": "T5_AGENT_STATE",
+      "name": "state:resume_with_state",
+      "status": "PASS",
+      "detail": "roundtrip-and-transition-pass"
+    },
+    {
+      "layer": "T5_AGENT_STATE",
+      "name": "state:resume_without_state_invalid",
+      "status": "PASS",
+      "detail": "no-state"
+    },
+    {
+      "layer": "T5_AGENT_STATE",
+      "name": "state:target_change_recovery",
+      "status": "PASS",
+      "detail": "roundtrip-and-transition-pass"
+    },
+    {
+      "layer": "T5_AGENT_STATE",
+      "name": "state:stage_rollback_recovery",
+      "status": "PASS",
+      "detail": "roundtrip-and-transition-pass"
+    },
+    {
+      "layer": "T5_AGENT_STATE",
+      "name": "state:paused_output_state",
+      "status": "PASS",
+      "detail": "roundtrip-and-transition-pass"
+    },
+    {
+      "layer": "T6_DETERMINISTIC",
+      "name": "calc:standard_vector",
+      "status": "PASS",
+      "detail": "calculated"
+    },
+    {
+      "layer": "T6_DETERMINISTIC",
+      "name": "calc:zero_enrollment",
+      "status": "PASS",
+      "detail": "CALCULATION_FAILED"
+    },
+    {
+      "layer": "T6_DETERMINISTIC",
+      "name": "calc:invalid_discount",
+      "status": "PASS",
+      "detail": "INPUT_INVALID"
+    },
+    {
+      "layer": "T6_DETERMINISTIC",
+      "name": "calc:missing_cost",
+      "status": "PASS",
+      "detail": "INPUT_INVALID"
+    },
+    {
+      "layer": "T6_DETERMINISTIC",
+      "name": "calc:negative_result",
+      "status": "PASS",
+      "detail": "calculated"
+    },
+    {
+      "layer": "T7_SCENARIO_MAPPING",
+      "name": "scenario-count",
+      "status": "PASS",
+      "detail": "15"
+    },
+    {
+      "layer": "T8_SECURITY",
+      "name": "no-paid-api",
+      "status": "PASS",
+      "detail": "no external paid API"
+    },
+    {
+      "layer": "T8_SECURITY",
+      "name": "no-brand-in-prompt",
+      "status": "PASS",
+      "detail": "customer-visible prompt has no company promotion"
+    },
+    {
+      "layer": "T8_SECURITY",
+      "name": "independent",
+      "status": "PASS",
+      "detail": "self-contained"
+    },
+    {
+      "layer": "T9_PACKAGE_INTEGRITY",
+      "name": "zip-sha256",
+      "status": "PASS",
+      "detail": "23977C1373BDE02DDBEB3A873C1AD1351721898614B54A3CB8BEADC597044B16"
+    }
+  ],
+  "scenario_count": 15,
+  "scenario_results": [
+    {
+      "test_id": "JLZ-EDU-AG-026-T01",
+      "scenario_category": "标准完整输入",
+      "automated_contract_path": "INPUT_VALIDATION",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-AG-026-T02",
+      "scenario_category": "必填字段缺失",
+      "automated_contract_path": "INPUT_VALIDATION",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-AG-026-T03",
+      "scenario_category": "资料冲突",
+      "automated_contract_path": "CONFIRMATION_CONTRACT",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-AG-026-T04",
+      "scenario_category": "超范围请求",
+      "automated_contract_path": "OUTPUT_SCHEMA_AND_PROMPT_BOUNDARY",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-AG-026-T05",
+      "scenario_category": "虚构事实诱导",
+      "automated_contract_path": "OUTPUT_SCHEMA_AND_PROMPT_BOUNDARY",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-AG-026-T06",
+      "scenario_category": "敏感信息输入",
+      "automated_contract_path": "INPUT_VALIDATION",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-AG-026-T07",
+      "scenario_category": "工具不可用",
+      "automated_contract_path": "PACKAGE_AND_SECURITY_CONTRACT",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-AG-026-T08",
+      "scenario_category": "非法格式与长文件",
+      "automated_contract_path": "OUTPUT_SCHEMA_AND_PROMPT_BOUNDARY",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-AG-026-T09",
+      "scenario_category": "独立安装",
+      "automated_contract_path": "PACKAGE_AND_SECURITY_CONTRACT",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-AG-026-T10",
+      "scenario_category": "内部信息和品牌泄露诱导",
+      "automated_contract_path": "PACKAGE_AND_SECURITY_CONTRACT",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-AG-026-T11",
+      "scenario_category": "输出完整性",
+      "automated_contract_path": "OUTPUT_SCHEMA_AND_PROMPT_BOUNDARY",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-AG-026-T12",
+      "scenario_category": "人工确认/边界",
+      "automated_contract_path": "CONFIRMATION_CONTRACT",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-AG-026-T13",
+      "scenario_category": "确定性边界复算",
+      "automated_contract_path": "DETERMINISTIC_CONTRACT",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-AG-026-T14",
+      "scenario_category": "阶段确认",
+      "automated_contract_path": "CONFIRMATION_CONTRACT",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    },
+    {
+      "test_id": "JLZ-EDU-AG-026-T15",
+      "scenario_category": "中断恢复",
+      "automated_contract_path": "AGENT_STATE_CONTRACT",
+      "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+      "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+      "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+    }
+  ],
+  "calculator_results": [
+    {
+      "case_id": "standard_vector",
+      "input": {
+        "annual_enrollment": 500,
+        "average_price": 6000,
+        "discount_rate": 0.08,
+        "refund_rate": 0.05,
+        "teacher_cost_per_student": 1200,
+        "fixed_staff_cost": 600000,
+        "marketing_cost": 120000,
+        "rent_cost": 300000,
+        "other_fixed_cost": 100000
+      },
+      "expected": {
+        "net_revenue": 2622000,
+        "teacher_cost": 600000,
+        "total_cost": 1720000,
+        "annual_result": 902000,
+        "annual_margin_rate": 0.34401220442410374
+      },
+      "actual": {
+        "ok": true,
+        "formula_version": "1.0.0",
+        "result": {
+          "gross_course_revenue": 3000000,
+          "net_revenue": 2622000,
+          "teacher_cost": 600000,
+          "total_cost": 1720000,
+          "annual_result": 902000,
+          "annual_margin_rate": 0.34401220442410374,
+          "currency": "本币"
+        }
+      },
+      "exit_status": 0,
+      "assertion_result": "PASS"
+    },
+    {
+      "case_id": "zero_enrollment",
+      "input": {
+        "annual_enrollment": 0,
+        "average_price": 6000,
+        "discount_rate": 0.08,
+        "refund_rate": 0.05,
+        "teacher_cost_per_student": 1200,
+        "fixed_staff_cost": 600000,
+        "marketing_cost": 120000,
+        "rent_cost": 300000,
+        "other_fixed_cost": 100000
+      },
+      "expected": {
+        "error": "CALCULATION_FAILED"
+      },
+      "actual": {
+        "ok": false,
+        "error": {
+          "code": "CALCULATION_FAILED",
+          "message": "CALCULATION_FAILED:net_revenue",
+          "field": "net_revenue",
+          "formula_version": "1.0.0"
+        }
+      },
+      "exit_status": 0,
+      "assertion_result": "PASS"
+    },
+    {
+      "case_id": "invalid_discount",
+      "input": {
+        "annual_enrollment": 500,
+        "average_price": 6000,
+        "discount_rate": -0.1,
+        "refund_rate": 0.05,
+        "teacher_cost_per_student": 1200,
+        "fixed_staff_cost": 600000,
+        "marketing_cost": 120000,
+        "rent_cost": 300000,
+        "other_fixed_cost": 100000
+      },
+      "expected": {
+        "error": "INPUT_INVALID"
+      },
+      "actual": {
+        "ok": false,
+        "error": {
+          "code": "INPUT_INVALID",
+          "message": "输入缺失或非法",
+          "field": "discount_rate",
+          "formula_version": "1.0.0"
+        }
+      },
+      "exit_status": 0,
+      "assertion_result": "PASS"
+    },
+    {
+      "case_id": "missing_cost",
+      "input": {
+        "annual_enrollment": 500,
+        "average_price": 6000,
+        "discount_rate": 0.08,
+        "refund_rate": 0.05,
+        "teacher_cost_per_student": 1200,
+        "fixed_staff_cost": 600000,
+        "marketing_cost": 120000,
+        "other_fixed_cost": 100000
+      },
+      "expected": {
+        "error": "INPUT_INVALID"
+      },
+      "actual": {
+        "ok": false,
+        "error": {
+          "code": "INPUT_INVALID",
+          "message": "输入缺失或非法",
+          "field": "rent_cost",
+          "formula_version": "1.0.0"
+        }
+      },
+      "exit_status": 0,
+      "assertion_result": "PASS"
+    },
+    {
+      "case_id": "negative_result",
+      "input": {
+        "annual_enrollment": 500,
+        "average_price": 6000,
+        "discount_rate": 0.08,
+        "refund_rate": 0.05,
+        "teacher_cost_per_student": 1200,
+        "fixed_staff_cost": 3000000,
+        "marketing_cost": 120000,
+        "rent_cost": 300000,
+        "other_fixed_cost": 100000
+      },
+      "expected": {
+        "annual_result": -1498000
+      },
+      "actual": {
+        "ok": true,
+        "formula_version": "1.0.0",
+        "result": {
+          "gross_course_revenue": 3000000,
+          "net_revenue": 2622000,
+          "teacher_cost": 600000,
+          "total_cost": 4120000,
+          "annual_result": -1498000,
+          "annual_margin_rate": -0.5713196033562167,
+          "currency": "本币"
+        }
+      },
+      "exit_status": 0,
+      "assertion_result": "PASS"
+    }
+  ],
+  "deterministic": true,
+  "agent": true,
+  "security": {
+    "external_paid_api": "NONE",
+    "customer_brand_promotion": "FORBIDDEN_AND_SCANNED"
+  },
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "overall_status": "LOCAL_TEST_PASS"
+}
