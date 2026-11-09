@@ -2,10 +2,10 @@
   "product_id": "JLZ-EDU-AG-026",
   "repository_name": "edu-campus-annual-budget-agent",
   "product_type": "Agent",
-  "version": "1.0.0",
-  "package_path": "dist/edu-campus-annual-budget-agent-v1.0.0.zip",
-  "sha256": "BE7584EA9502E974EE96AA097544BA7F08B50A6EEA30E75D1BCF2FCA3A05E7DC",
-  "bytes": 49077,
+  "version": "1.0.1",
+  "package_path": "dist/edu-campus-annual-budget-agent-v1.0.1.zip",
+  "sha256": "23977C1373BDE02DDBEB3A873C1AD1351721898614B54A3CB8BEADC597044B16",
+  "bytes": 50205,
   "entries": [
     "edu-campus-annual-budget-agent/README.md",
     "edu-campus-annual-budget-agent/PRODUCT_SPEC.md",
@@ -40,5 +40,9 @@
   "license": "Apache-2.0",
   "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
   "workbuddy_validation": "NOT_EXECUTED",
-  "built_at": "2026-11-09T00:00:00+08:00"
+  "built_at": "2026-11-09T11:59:43.134999+00:00",
+  "previous_version": "1.0.0",
+  "previous_package_path": "dist/edu-campus-annual-budget-agent-v1.0.0.zip",
+  "previous_package_sha256": "BE7584EA9502E974EE96AA097544BA7F08B50A6EEA30E75D1BCF2FCA3A05E7DC",
+  "patch_reason": "README_USAGE_INSTALLATION_AND_PLATFORM_METADATA_FINALIZATION"
 }
